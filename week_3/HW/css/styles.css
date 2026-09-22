@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #302c27;
+  background-color: #f6f2ea;
+}
+
+.site-header, main, footer {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding-top: 24px;
+}
+
+.site-name {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #394c39;
+  font-size: 0;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+nav a {
+  display: block;
+  padding: 12px 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #526852;
+}
+
+main {
+  margin-top: 24px;
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid #d9d2c5;
+}
+
+h1, h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 8px 0 16px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.category {
+  color: #52634b;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+figure {
+  margin: 24px 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9d2c5;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #625b50;
+}
+
+.recipe-columns {
+  font-size: 0;
+}
+
+.recipe-column {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  padding: 20px;
+}
+
+#ingredients {
+  width: 36%;
+  margin-right: 4%;
+  background-color: #f6f2ea;
+}
+
+#instructions {
+  width: 60%;
+  border: 1px solid #d9d2c5;
+}
+
+article ul, article ol {
+  padding-left: 24px;
+}
+
+article li {
+  margin-bottom: 10px;
+}
+
+.tips {
+  margin-top: 28px;
+  padding: 20px;
+  border-left: 4px solid #52634b;
+  background-color: #eef1e9;
+}
+
+#about {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #d9d2c5;
+}
+
+a {
+  color: #394c39;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #ingredients, #instructions {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
