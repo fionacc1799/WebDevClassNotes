@@ -28,12 +28,6 @@ a {
   text-decoration: none;
 }
 
-/* Keep a visible outline when I use Tab to move through links. */
-a:focus-visible {
-  outline: 3px solid #28655f;
-  outline-offset: 4px;
-}
-
 /* Shared page width. Auto margins center each section. */
 .site-header,
 .category-nav,
@@ -116,8 +110,7 @@ nav ul {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.category-nav a:hover,
-.category-nav a:focus-visible {
+.category-nav a:hover {
   background-color: #28655f;
   color: #faf9f6;
 }
@@ -186,8 +179,7 @@ nav ul {
   font-weight: bold;
 }
 
-.subcategory-nav a:hover,
-.subcategory-nav a:focus-visible {
+.subcategory-nav a:hover {
   color: #28655f;
   border-bottom-color: #28655f;
 }
