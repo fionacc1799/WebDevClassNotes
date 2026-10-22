@@ -1,0 +1,422 @@
+/* Base styles
+   White #ffffff, warm gray #3e3835, turquoise #a3d6d0. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #3e3835;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Keep a visible outline when I use Tab to move through links. */
+a:focus-visible {
+  outline: 3px solid #28655f;
+  outline-offset: 4px;
+}
+
+/* Shared page width. Auto margins center each section. */
+.site-header,
+.category-nav,
+main,
+.site-footer {
+  width: 94%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header and main navigation
+   Flexbox puts the site name and links next to each other. */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 30px 0 24px;
+  border-bottom: 3px solid #c0d9d4;
+}
+
+.site-name {
+  font-family: Baskerville, 'Times New Roman', serif;
+  font-size: 72px;
+  font-weight: normal;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 3px solid transparent;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  border-bottom-color: #a3d6d0;
+}
+
+/* Category bar */
+
+.category-nav {
+  background-color: #a3d6d0;
+  margin-top: 16px;
+}
+
+/* Keep categories on one line. Scroll sideways if the screen is too narrow. */
+.category-nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.category-nav li {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+.category-nav a {
+  display: block;
+  padding: 14px 12px;
+  font-size: 13px;
+  white-space: nowrap;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.category-nav a:hover,
+.category-nav a:focus-visible {
+  background-color: #28655f;
+  color: #faf9f6;
+}
+
+/* Section headings and spacing */
+
+.page-title {
+  margin: 24px 0 20px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.category-section {
+  margin-bottom: 60px;
+  scroll-margin-top: 20px;
+}
+
+.section-heading,
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #c0d9d4;
+}
+
+.section-heading h2,
+.page-heading h1 {
+  font-family: Baskerville, 'Times New Roman', serif;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.section-heading p,
+.page-heading p {
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.page-heading {
+  margin-top: 32px;
+}
+
+/* Subcategory links can wrap when they run out of room. */
+.subcategory-nav {
+  margin-bottom: 28px;
+}
+
+.subcategory-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.subcategory-nav a {
+  display: block;
+  padding: 6px 0;
+  border-bottom: 2px solid #c0d9d4;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.subcategory-nav a:hover,
+.subcategory-nav a:focus-visible {
+  color: #28655f;
+  border-bottom-color: #28655f;
+}
+
+/* Each subcategory uses the same card grid below. */
+.subcategory-section {
+  margin-bottom: 32px;
+  scroll-margin-top: 20px;
+}
+
+.subcategory-section > h3 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Shared card grid
+   Base layout: 32% per card + two 2% gaps = three columns.
+   Closet and outfit rules below override the card width. */
+
+.clothing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 32px;
+}
+
+.clothing-card {
+  flex: 0 0 32%;
+  min-width: 0;
+}
+
+/* Plain photo area */
+.photo-placeholder,
+.clothing-photo {
+  width: 100%;
+  height: 380px;
+  background-color: #edf2ef;
+}
+
+.photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border-top: 1px solid #c0d9d4;
+  text-align: center;
+}
+
+.photo-placeholder span {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.photo-placeholder small {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* Contain keeps the whole photo visible without stretching or cropping.
+   Empty space is okay. */
+.clothing-photo {
+  display: block;
+  object-fit: contain;
+}
+
+.item-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.item-heading h2,
+.item-heading h3,
+.item-heading h4 {
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.item-number {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.item-details {
+  margin-top: 5px;
+  color: #68615c;
+  font-size: 12px;
+}
+
+/* Only change the title color on hover, so the layout stays still. */
+.clothing-card:hover h2,
+.clothing-card:hover h3,
+.clothing-card:hover h4 {
+  color: #28655f;
+}
+
+/* Closet desktop layout: 23.5% per card + three 2% gaps = four slots.
+   Currently using two cards per section; keep their size when adding more. */
+.closet-grid .clothing-card {
+  flex-basis: 23.5%;
+}
+
+.closet-grid .photo-placeholder,
+.closet-grid .clothing-photo {
+  height: 240px;
+}
+
+.closet-grid .photo-placeholder span {
+  font-size: 18px;
+}
+
+/* Outfits and footer */
+
+.outfit-grid .clothing-card {
+  flex-basis: 49%;
+}
+
+.outfit-placeholder {
+  height: 480px;
+}
+
+.example-label {
+  margin-top: 8px;
+  font-size: 10px;
+  color: #68615c;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+  margin-top: 64px;
+  border-top: 3px solid #c0d9d4;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .site-name {
+    font-size: 52px;
+    letter-spacing: 0;
+  }
+
+  .clothing-card {
+    flex-basis: 49%;
+  }
+
+  /* three slots per row */
+  .closet-grid .clothing-card {
+    flex-basis: 32%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px 0 14px;
+  }
+
+  .site-name {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+
+  .main-nav ul {
+    gap: 28px;
+  }
+
+  .category-nav a {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .section-heading h2,
+  .page-heading h1 {
+    font-size: 32px;
+  }
+
+  .clothing-card,
+  .outfit-grid .clothing-card {
+    flex-basis: 100%;
+  }
+
+  .photo-placeholder,
+  .clothing-photo {
+    height: 360px;
+  }
+
+  .outfit-placeholder {
+    height: 420px;
+  }
+
+  /* Two closet cards per row */
+  .closet-grid .clothing-card {
+    flex-basis: 49%;
+  }
+
+  .closet-grid .photo-placeholder,
+  .closet-grid .clothing-photo {
+    height: 190px;
+  }
+
+  .closet-grid .photo-placeholder {
+    padding: 10px;
+  }
+
+  .closet-grid .photo-placeholder span {
+    font-size: 15px;
+  }
+
+  .category-section {
+    margin-bottom: 42px;
+  }
+}
