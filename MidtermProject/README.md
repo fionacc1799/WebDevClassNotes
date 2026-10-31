@@ -9,10 +9,7 @@ A personal wardrobe website for my Web Dev Class midterm, built with HTML and CS
 
 Open `index.html` to view the site. No installation or login is required.
 
-Brand abbreviations PW and BM follow the supplied filenames; unknown brands are omitted.
-When adding a card, update the category count and total, write descriptive alt text, and use a unique item ID.
-
-Possible next steps: clothing details, updated sitemap and homepage wireframe.
+Possible next steps: filter items by category, color, and brand; sort items by name; and search the wardrobe by keyword.
 
 ## Midterm website
 
