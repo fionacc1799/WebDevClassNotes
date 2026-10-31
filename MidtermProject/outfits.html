@@ -1,79 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Outfits | My Wardrobe</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body id="top">
-    <header class="site-header">
-      <a class="site-name" href="index.html">MY WARDROBE</a>
-
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li>
-            <a href="index.html">CLOSET</a>
-          </li>
-          <li>
-            <a href="outfits.html" aria-current="page">OUTFITS</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <header class="page-heading">
-        <h1>MY OUTFITS</h1>
-        <p>02 EXAMPLES</p>
-      </header>
-
-      <!-- Reuse the card layout -->
-      <div class="clothing-grid outfit-grid">
-        <article class="clothing-card">
-          <figure>
-            <!-- Add my own outfit photo here later. -->
-            <div class="photo-placeholder outfit-placeholder">
-              <span>OUTFIT 01</span>
-              <small>PHOTO TO BE ADDED</small>
-            </div>
-
-            <figcaption>
-              <div class="item-heading">
-                <h2>OUTFIT 01</h2>
-                <span class="item-number">001</span>
-              </div>
-              <p class="item-details">T-shirt / Jeans / Jacket</p>
-              <p class="example-label">EXAMPLE COMBINATION</p>
-            </figcaption>
-          </figure>
-        </article>
-
-        <article class="clothing-card">
-          <figure>
-            <!-- Add my own outfit photo here later. -->
-            <div class="photo-placeholder outfit-placeholder">
-              <span>OUTFIT 02</span>
-              <small>PHOTO TO BE ADDED</small>
-            </div>
-
-            <figcaption>
-              <div class="item-heading">
-                <h2>OUTFIT 02</h2>
-                <span class="item-number">002</span>
-              </div>
-              <p class="item-details">Knitwear / Trousers / Coat</p>
-              <p class="example-label">EXAMPLE COMBINATION</p>
-            </figcaption>
-          </figure>
-        </article>
-
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <p>MY WARDROBE</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Outfits | My Wardrobe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="index.html">MY WARDROBE</a>
+    <nav class="main-nav" aria-label="Main navigation"><ul>
+      <li><a href="index.html" >CLOSET</a></li>
+      <li><a href="outfits.html" aria-current="page">OUTFITS</a></li>
+    </ul></nav>
+  </header>
+  <main id="main">
+    <header class="page-heading"><h1>MY OUTFITS</h1><p>03 LOOKS</p></header>
+    <p class="outfit-intro">Combinations from my closet. Select a piece to find it in the wardrobe.</p>
+    <div class="clothing-grid outfit-grid">
+      <article class="clothing-card outfit-card"><div class="outfit-board">
+        <a href="index.html#item-top_tshirt_jamesperse_white" aria-label="View White V-neck T-shirt in my closet"><img class="clothing-photo" src="img/top_tshirt_jamesperse_white.webp" alt="White V-neck T-shirt" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-bottom_jeans_celine" aria-label="View Blue flared jeans in my closet"><img class="clothing-photo" src="img/bottom_jeans_celine.webp" alt="Blue flared jeans" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-shoes_sneakers_chanel" aria-label="View Beige sneakers in my closet"><img class="clothing-photo" src="img/shoes_sneakers_chanel.webp" alt="Beige sneakers" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-bag_chanel" aria-label="View Quilted chain bag in my closet"><img class="clothing-photo" src="img/bag_chanel.webp" alt="Quilted chain bag" loading="lazy" decoding="async"></a>
+      </div><div class="item-heading"><h2>Everyday neutrals</h2><span class="item-number">001</span></div><p class="item-details">A white tee, blue denim and soft beige sneakers.</p><ul class="outfit-pieces"><li><a href="index.html#item-top_tshirt_jamesperse_white">White V-neck T-shirt</a></li><li><a href="index.html#item-bottom_jeans_celine">Blue flared jeans</a></li><li><a href="index.html#item-shoes_sneakers_chanel">Beige sneakers</a></li><li><a href="index.html#item-bag_chanel">Quilted chain bag</a></li></ul></article>
+      <article class="clothing-card outfit-card"><div class="outfit-board">
+        <a href="index.html#item-top_knitwear_babyblue" aria-label="View Cropped wrap cardigan in my closet"><img class="clothing-photo" src="img/top_knitwear_babyblue.webp" alt="Cropped wrap cardigan" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-bottom_jeans_white" aria-label="View White wide-leg jeans in my closet"><img class="clothing-photo" src="img/bottom_jeans_white.webp" alt="White wide-leg jeans" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-shoes_ballet_tonybianco" aria-label="View Black ballet heels in my closet"><img class="clothing-photo" src="img/shoes_ballet_tonybianco.webp" alt="Black ballet heels" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-bag_lv" aria-label="View Monogram bucket bag in my closet"><img class="clothing-photo" src="img/bag_lv.webp" alt="Monogram bucket bag" loading="lazy" decoding="async"></a>
+      </div><div class="item-heading"><h2>Soft color</h2><span class="item-number">002</span></div><p class="item-details">Baby blue knitwear with white denim and a colorful bag.</p><ul class="outfit-pieces"><li><a href="index.html#item-top_knitwear_babyblue">Cropped wrap cardigan</a></li><li><a href="index.html#item-bottom_jeans_white">White wide-leg jeans</a></li><li><a href="index.html#item-shoes_ballet_tonybianco">Black ballet heels</a></li><li><a href="index.html#item-bag_lv">Monogram bucket bag</a></li></ul></article>
+      <article class="clothing-card outfit-card"><div class="outfit-board">
+        <a href="index.html#item-dress_midi_black" aria-label="View Black slip dress in my closet"><img class="clothing-photo" src="img/dress_midi_black.webp" alt="Black slip dress" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-outerwear_coat_trench" aria-label="View Short trench coat in my closet"><img class="clothing-photo" src="img/outerwear_coat_trench.webp" alt="Short trench coat" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-shoes_ballet_tonybianco" aria-label="View Black ballet heels in my closet"><img class="clothing-photo" src="img/shoes_ballet_tonybianco.webp" alt="Black ballet heels" loading="lazy" decoding="async"></a>
+        <a href="index.html#item-bag_chanel" aria-label="View Quilted chain bag in my closet"><img class="clothing-photo" src="img/bag_chanel.webp" alt="Quilted chain bag" loading="lazy" decoding="async"></a>
+      </div><div class="item-heading"><h2>Evening layers</h2><span class="item-number">003</span></div><p class="item-details">A black slip dress paired with a short trench and classic accessories.</p><ul class="outfit-pieces"><li><a href="index.html#item-dress_midi_black">Black slip dress</a></li><li><a href="index.html#item-outerwear_coat_trench">Short trench coat</a></li><li><a href="index.html#item-shoes_ballet_tonybianco">Black ballet heels</a></li><li><a href="index.html#item-bag_chanel">Quilted chain bag</a></li></ul></article>
+    </div>
+  </main>
+  <footer class="site-footer"><p>MY WARDROBE</p><a href="#top">BACK TO TOP ↑</a></footer>
+</body>
 </html>

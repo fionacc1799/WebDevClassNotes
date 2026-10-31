@@ -1,18 +1,19 @@
 # My Wardrobe
 
-A personal wardrobe website for my Web Dev Class midterm. It presents clothes by category and a selection of outfits. No login or account system.
+A personal wardrobe website for my Web Dev Class midterm, built with HTML and CSS.
 
-## Current version
-- `index.html`: closet home, category anchors and sample clothing cards.
-- `outfits.html`: example outfit combinations.
-- `css/style.css`: typography, box model, Flexbox, hover transition and responsive layout.
-- `img/`: add my own clothing photographs here.
+- `index.html`: 33 real items across seven categories, with subcategory anchor navigation.
+- `outfits.html`: three outfit combinations; each image and item link leads to its closet card.
+- `css/style.css`: responsive Flexbox layouts, mint accents, keyboard focus and target styles.
+- `img/`: WebP images with transparency preserved and longest edge at most 1200 px.
 
-All current cards are explicitly labeled examples or placeholders. Replace them with real photos and accurate item details before presenting.
+Open `index.html` to view the site. No installation or login is required.
 
-## Next steps
-1. Replace photo placeholders with images. An example image tag appears in each card's HTML comment. Use descriptive alt text.
-2. Replace sample names, brands, colors and outfits with my own content.
-3. Add a clothing-detail modal using the Week07 CSS `:target` lesson.
-4. Add the updated sitemap and homepage wireframe to this repo.
-5. Test real phone layout, commit changes and prepare the live demo.
+Brand abbreviations PW and BM follow the supplied filenames; unknown brands are omitted.
+When adding a card, update the category count and total, write descriptive alt text, and use a unique item ID.
+
+Possible next steps: clothing details, updated sitemap and homepage wireframe.
+
+## Midterm website
+
+[Open My Wardrobe](https://fionacc1799.github.io/WebDevClassNotes/MidtermProject/)
